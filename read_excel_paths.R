@@ -14,7 +14,7 @@ paths <- readxl::read_excel("C:\\Users\\savaame\\Desktop\\1000 premier\\xlsx\\pa
 
 
 read_excel_paths <- function(keyword = NULL, size = 100) {
-  edsRApi::connect("savaame", project_id, password = "Amelie.33650!")
+  edsRApi::connect("XXXXXXX", project_id, password = "XXXXXXX")
   
   # keyword = df dans le tableau excel des paths
   # Recuperation de la liste des paths pour un keyword donne  

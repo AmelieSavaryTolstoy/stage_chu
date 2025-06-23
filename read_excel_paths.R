@@ -6,8 +6,8 @@ library(jsonlite)
 
 
 
-project_id = "681240a1b3611f27c6af57f9"
-conn <- edsRApi::connect("savaame", project_id, password = "Amelie.33650!")
+project_id = "XXXXXXXXXXXXX"
+conn <- edsRApi::connect("XXXXXXXXXXX", project_id, password = "XXXXXXX")
 
 # Lire le fichier Excel
 paths <- readxl::read_excel("C:\\Users\\savaame\\Desktop\\1000 premier\\xlsx\\path_eds_label.xlsx")
@@ -63,7 +63,7 @@ read_excel_paths <- function(keyword = NULL, size = 100) {
     for (page in 0:(json$totalPages - 1)) { 
       
       if (page %% 100 == 0) {
-        conn <- edsRApi::connect("savaame", project_id, password = "Amelie.33650!")
+        conn <- edsRApi::connect("XXXXXXX", project_id, password = "XXXXXXX!")
         # se reconnecter tous les 100 pages
       }
       

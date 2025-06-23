@@ -12,10 +12,10 @@ library(survminer)
 devtools::install_git("https://gitlabeds.chu-bordeaux.fr/iampublic/edsrapi.git")
 
 # ---- ID du projet ----
-project_id = "68124159b3611f27c6af57fa"
+project_id = "XXXXXXX"
 
 # ---- Connexion aux API centrées sur le projet ----
-conn <- edsRApi::connect("savaame", project_id)
+conn <- edsRApi::connect("XXXXXXX", project_id)
 
 # ---- Tableau vierge, sexe, ddn ----
 observationFilter <- edsRApi::observation_filter_builder() %>%
